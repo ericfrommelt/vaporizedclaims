@@ -1,0 +1,94 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Ringside Regular SSm A", "Ringside Regular SSm B", -apple-system,
+    BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+    Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+body ::selection {
+  background-color: #000;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: #ce0000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+figure {
+  display: block;
+  margin: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+.container {
+  max-width: 90%;
+  padding: 0 1rem;
+  margin: 3rem auto 6rem;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 4em;
+}
+
+.logo {
+  font-family: stratum-2-web, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+.logo a {
+  color: #000;
+}
+
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav__link {
+  padding: 0 0 0 2em;
+  font-size: 0.7rem;
+  font-family: "Ringside Narrow SSm A", "Ringside Narrow SSm B";
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.nav__link a {
+  color: #000;
+}

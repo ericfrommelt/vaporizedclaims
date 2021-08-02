@@ -1,0 +1,101 @@
+.collageInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.meta {
+  font-family: "Operator Mono A", "Operator Mono B", monospace;
+  font-size: 0.8rem;
+}
+
+.type {
+  font-family: "Quarto A", "Quarto B", stratum-2-web, sans-serif;
+}
+
+.collageWrap {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 5;
+  background-color: #eee;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.plant {
+  grid-column: 7 / span 5;
+  grid-row: 3 / span 3;
+  clip-path: polygon(100% 0, 100% 100%, 28% 85%, 0 88%, 0 1%);
+}
+
+.scribble {
+  grid-column: 1 / span 5;
+  grid-row: 1;
+  mix-blend-mode: multiply;
+}
+
+.echopark {
+  grid-column: 2 / span 6;
+  grid-row: 3 / span 4;
+  clip-path: polygon(33% 0, 100% 38%, 100% 100%, 0 100%, 0 1%);
+}
+
+.ravage {
+  composes: type;
+  font-weight: 300;
+  font-size: 14rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  grid-column: 6 / span 10;
+  grid-row: 1 / span 2;
+}
+
+.circle {
+  margin: 0.3rem 0 0 -2rem;
+  grid-column: 3;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background: rgb(173, 51, 14);
+  clip-path: polygon(33% 0, 100% 0, 100% 74%, 0 75%, 0 1%);
+}
+
+.barGreen {
+  grid-column: 6;
+  grid-row: 1 / span 1;
+  max-height: 20rem;
+  padding: 1em;
+  margin: -4em;
+  width: 0.5rem;
+  background-color: rgb(33, 58, 46);
+}
+
+.vc {
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+}
+
+.vaporized {
+  composes: vc;
+  grid-column: 2 / span 2;
+}
+
+.claims {
+  composes: vc;
+  grid-column: 4 / span 2;
+}
+
+.rectangle__copper {
+  display: block;
+  grid-column: 1 / span 6;
+  grid-row: 3;
+  background-color: #d6a345;
+  min-height: 1em;
+  margin-top: 16.3em;
+  z-index: 9000;
+}
+
+.a {
+  composes: type;
+  font-size: 20rem;
+  line-height: 1rem;
+}

@@ -1,0 +1,84 @@
+.collageInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.meta {
+  font-family: "Operator Mono A", "Operator Mono B", monospace;
+  font-size: 0.8rem;
+}
+
+.type {
+  font-family: "Quarto A", "Quarto B", stratum-2-web, sans-serif;
+}
+
+.collageWrap {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: #eee;
+  overflow: hidden;
+  border-radius: 1rem;
+  padding: 6rem 0;
+}
+
+.draw {
+  mix-blend-mode: multiply;
+  grid-column: 6 / span 6;
+  grid-row: 1 / span 2;
+}
+
+.sketch {
+  grid-column: 8 / span 2;
+  grid-row: 1 / span 3;
+}
+
+.dorm {
+  grid-column: 1 / span 12;
+  grid-row: 2 / span 2;
+  clip-path: polygon(71% 0, 100% 0, 100% 97%, 0 100%, 0 5%);
+}
+
+@media screen and (min-width: 800px) {
+  .dorm {
+    grid-column: 2 / span 8;
+    grid-row: 2 / span 2;
+  }
+}
+
+.boxOne {
+  z-index: 2000;
+  grid-column: 10;
+  grid-row: 3;
+  min-width: 0.9rem;
+  width: 2em;
+  height: 100%;
+  display: block;
+  background: rgb(57, 244, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(57, 244, 255, 1) 0%,
+    rgba(255, 0, 42, 1) 100%
+  );
+}
+
+.runaway {
+  display: inline-flex;
+  grid-column: 2;
+  grid-row: 2 / span 2;
+  font-family: "Ringside Condensed A", "Ringside Condensed B";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 1em;
+}
+
+.runawayTwo {
+  composes: runaway;
+  font-size: 16rem;
+  grid-column: 6 / span 6;
+  grid-row: 1 / span 3;
+  z-index: 9000;
+  display: fixed;
+}
